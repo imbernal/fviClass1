@@ -171,7 +171,7 @@
         <h3>Feel free to contact me!</h3>
       </div>
       
-      <form action="fvi-grad.com:4004/email" method="get">
+      <form id="contact-form" action="http://fvi-grad.com:4004/email" method="post">
   
         <div class="form-group">
           <label for="exampleInputEmail1">Full Name</label>
@@ -199,7 +199,7 @@
           <label for="email">Email</label>
           <input type="email" name="email" class="form-control" id="email" placeholder="email">
         </div>
-        <textarea class="form-control" rows="3" placeholder="Send me a message"></textarea>
+        <textarea class="form-control" id="textArea" rows="3" placeholder="Send me a message"></textarea>
         <br>
         <button type="submit" id="submit" class="btn btn-default">Submit</button>
       </form>
@@ -228,14 +228,8 @@
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 
     <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="../../dist/js/main.js"></script>
 
-    <script>
-      $(document).ready(function(){
-        $('.carousel').carousel()
-        
-      
-
-      })
-    </script>
+    
   </body>
 </html>
